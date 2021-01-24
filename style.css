@@ -27,6 +27,7 @@ h1, .user-count {
 
 .user-count {
   float: right;
+  padding: 20px 0;
 }
 
 .chat {
