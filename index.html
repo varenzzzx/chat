@@ -5,11 +5,25 @@
     <title>First website</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
-    Hello world
+    <main>
+      <header>
+        <div class="user-count fa fa-user">0</div>
+        <h1>Tokyo Chat</h1>
+      </header>
+
+      <section class="chat"></section>
+
+      <form>
+        <input type="text" placeholder="Say something nice" />
+        <button>Send</button>
+      </form>
+    </main>
+
 
     <!-- Include jquery, cookies, socket.io (client-side) and your own code -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -18,19 +32,3 @@
     <script src="javascript.js"></script>
   </body>
 </html>
-<main>
-  <header>
-    <div class="user-count">0</div>
-    <h1>Tokyo Chat</h1>
-  </header>
-
-  <section class="chat">
-    <p><strong>Pepito</strong>: Hey everyone!</p>
-    <p><strong>親日</strong>: こんいちは！</p>
-  </section>
-
-  <form>
-    <input type="text" placeholder="Say something nice" />
-    <button>Send</button>
-  </form>
-</main>
