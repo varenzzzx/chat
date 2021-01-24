@@ -1,21 +1,36 @@
+<!-- ./public/index.html -->
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>First website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
 
-<head>
-    <title>Varen Chat App</title>
-    <script src="./index.js"></script>
-</head>
+    Hello world
 
-<body>
-    <h2>Varen Chat App</h2>
-    <ul id="message-list">
-
-    </ul>
-    <form id="chatForm">
-        <input type="text" name="message">
-        <input id="sender" type="text" name="sender" style="display: none" value="">
-        <input type="submit" name="submit">
-    </form>
-</body>
-
+    <!-- Include jquery, cookies, socket.io (client-side) and your own code -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://unpkg.com/cookie_js@1.2.2/cookie.min.js"></script>
+    <script src="https://unpkg.com/socket.io-client@2/dist/socket.io.slim.js"></script>
+    <script src="javascript.js"></script>
+  </body>
 </html>
+<main>
+  <header>
+    <div class="user-count">0</div>
+    <h1>Tokyo Chat</h1>
+  </header>
+
+  <section class="chat">
+    <p><strong>Pepito</strong>: Hey everyone!</p>
+    <p><strong>親日</strong>: こんいちは！</p>
+  </section>
+
+  <form>
+    <input type="text" placeholder="Say something nice" />
+    <button>Send</button>
+  </form>
+</main>
