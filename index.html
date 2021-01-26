@@ -1,11 +1,25 @@
+<!DOCTYPE html>
 <html>
-<head>
-     <title>Really Cool</title>
-</head>
-<body style='margin: 0'>
-          <canvas id="canvas">
-                   sorry 
-          </canvas>
-          <script src="main.js"></script>
+<body>
+
+<p class="p1">Varen Test</p>
+
+<button class="p2" onclick="myFunction()">Tekan Ini</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var txt;
+  var r = confirm("Kamu Cinta Aku? \nTekan Tombol dibawah!!\n Ok = Iya No = Ga");
+  if (r == true) {
+    txt = "I LOVE U TOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO";
+  } else {
+    txt = "ANJG LU";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
 </body>
 </html>
